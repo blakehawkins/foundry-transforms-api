@@ -1,0 +1,5 @@
+setup.py
+foundry_transforms_api.egg-info/PKG-INFO
+foundry_transforms_api.egg-info/SOURCES.txt
+foundry_transforms_api.egg-info/dependency_links.txt
+foundry_transforms_api.egg-info/top_level.txt

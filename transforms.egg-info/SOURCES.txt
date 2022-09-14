@@ -1,4 +1,5 @@
 setup.py
+src/transforms/__init__.py
 transforms.egg-info/PKG-INFO
 transforms.egg-info/SOURCES.txt
 transforms.egg-info/dependency_links.txt

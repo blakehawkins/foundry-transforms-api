@@ -5,8 +5,9 @@ def transform_df(output, **kwargs):
   '''Accepts a single Output and a set of Inputs in the form of **kwargs.'''
 
   def decorate(fn):
-    output.write(fn(*[kwargs[arg] for arg in inspect.getfullargspec(fn).args]))
-    return fn
+    def inner():
+      output.write(fn(*[kwargs[arg].val() for arg in inspect.getfullargspec(fn).args]))
+    return inner
   return decorate
 
 

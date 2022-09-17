@@ -25,6 +25,8 @@ def test_transform_df():
 
   @transform_df(output, a=Input("a"), b=Input("b"))
   def transform(a, b):
-    return a.val() + b.val()
+    return a + b
+
+  transform()
 
   assert(output.get() == 5)
